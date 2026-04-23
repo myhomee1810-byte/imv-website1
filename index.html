@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMV Supply Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--gold:#d4af37;
+--dark:#050505;
+--gray:#bfbfbf;
+--border:#1f1f1f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#000;color:#fff}
+
+header{
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 60px;border-bottom:1px solid var(--border);
+position:sticky;top:0;background:#000;z-index:1000;
+}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:45px}
+.logo h1{color:var(--gold);font-size:20px}
+nav a{margin:0 18px;color:#aaa;text-decoration:none;font-size:14px;transition:.3s}
+nav a:hover{color:#fff}
+
+.hero{
+padding:120px 60px;
+background:url('chinar.jpg') center/cover no-repeat;
+position:relative;
+}
+.hero::before{
+content:"";position:absolute;top:0;left:0;width:100%;height:100%;
+background:linear-gradient(90deg,#000 45%,transparent);
+}
+.hero-content{position:relative;max-width:600px}
+.hero small{color:var(--gold);letter-spacing:2px}
+.hero h1{font-size:56px;line-height:1.2;margin:15px 0}
+.hero span{color:var(--gold)}
+.hero p{color:var(--gray);margin-bottom:25px}
+.btn{padding:12px 28px;border-radius:4px;font-size:14px;text-decoration:none;margin-right:10px}
+.btn-gold{background:var(--gold);color:#000}
+.btn-outline{border:1px solid var(--gold);color:var(--gold)}
+
+.features,.stats{
+display:grid;grid-template-columns:repeat(4,1fr);
+border-top:1px solid var(--border);
+}
+.feature,.stat{text-align:center;padding:25px;border-right:1px solid var(--border)}
+.feature:last-child,.stat:last-child{border-right:none}
+.feature strong{display:block;color:#fff}
+.stat h2{color:var(--gold)}
+
+.section{padding:80px 60px}
+.section h2{color:var(--gold);margin-bottom:40px;text-align:center;font-size:28px}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about-text{color:var(--gray);line-height:1.8}
+.about-boxes{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{border:1px solid var(--border);padding:25px;transition:.3s}
+.box:hover{border-color:var(--gold)}
+
+.products{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.product{border:1px solid var(--border);padding:10px;transition:.3s}
+.product:hover{border-color:var(--gold);transform:scale(1.03)}
+.product img{width:100%;border-radius:4px}
+.product p{margin-top:8px;font-size:13px}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid var(--border)}
+.form input,.form textarea{
+width:100%;padding:12px;margin:10px 0;background:#111;border:none;color:#fff
+}
+.form button{background:var(--gold);padding:12px;width:100%;border:none}
+
+footer{
+padding:50px 60px;border-top:1px solid var(--border);
+display:grid;grid-template-columns:1fr 1fr 1fr;color:#aaa;font-size:13px
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;padding:15px;border-radius:50%;
+}
+
+@media(max-width:900px){
+.hero{padding:80px 20px}
+.features,.stats{grid-template-columns:1fr 1fr}
+.products{grid-template-columns:1fr 1fr}
+.about{grid-template-columns:1fr}
+.contact{grid-template-columns:1fr}
+footer{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo"><img src="logo.png"><h1>IMV</h1></div>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<small>TRUSTED. RELIABLE. READY TO DELIVER</small>
+<h1>SUPPLYING <span>EXCELLENCE.</span><br>SERVING THOSE <span>WHO SERVE.</span></h1>
+<p>Army & institutional supply solutions across Kashmir with quality and reliability.</p>
+<a href="#contact" class="btn btn-gold">GET A QUOTE</a>
+<a href="https://wa.me/918713023034" class="btn btn-outline">CHAT ON WHATSAPP</a>
+</div>
+</section>
+
+<div class="features">
+<div class="feature"><strong>Defence Ready</strong>High standards</div>
+<div class="feature"><strong>Wide Range</strong>All products</div>
+<div class="feature"><strong>On Time Delivery</strong>Reliable</div>
+<div class="feature"><strong>Trusted Partner</strong>Long term</div>
+</div>
+
+<div class="stats">
+<div class="stat"><h2>500+</h2><p>Clients</p></div>
+<div class="stat"><h2>2500+</h2><p>Products</p></div>
+<div class="stat"><h2>10+</h2><p>Years</p></div>
+<div class="stat"><h2>Kashmir</h2><p>Network</p></div>
+</div>
+
+<section class="section" id="about">
+<h2>ABOUT US</h2>
+<div class="about">
+<div class="about-text">
+IMV is a trusted supplier specializing in army, institutional and bulk supply solutions with focus on quality and delivery.
+</div>
+<div class="about-boxes">
+<div class="box">Vision</div>
+<div class="box">Mission</div>
+<div class="box">Values</div>
+<div class="box">Why Choose Us</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="products">
+<h2>WHAT WE SUPPLY</h2>
+<div class="products">
+<div class="product"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"><p>Army Supplies</p></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"><p>Warehouse</p></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952"><p>Tools</p></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1581091215367-59ab6b3b8e9b"><p>Stationery</p></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1603575448369-153f093fd0f9"><p>Packaging</p></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"><p>Outdoor</p></div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div>
+<h2>Contact Information</h2>
+<p><strong>Phone:</strong> 8713023034</p>
+<p><strong>Email:</strong> imvdesk@outlook.com</p>
+<p><strong>Address:</strong> Batwara, Srinagar, Jammu & Kashmir 190004</p>
+
+<!-- Google Maps -->
+<iframe src="https://www.google.com/maps?q=Batwara%20Srinagar%20Jammu%20and%20Kashmir&output=embed" width="100%" height="250" style="border:0;border-radius:8px;margin-top:15px;"></iframe>
+
+</div>
+<div class="form">
+<h2>Send Inquiry</h2>
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea placeholder="Requirement"></textarea>
+<button>Send Inquiry</button>
+</form>
+</div>
+</section>
+
+<a href="https://wa.me/918713023034" class="whatsapp">💬</a>
+
+<footer>
+<div>
+<p><strong>IMV Supply Solutions</strong></p>
+<p>Your trusted partner for Army & Institutional Supplies</p>
+</div>
+<div>
+<p><strong>Contact Info</strong></p>
+<p>📞 8713023034</p>
+<p>📧 imvdesk@outlook.com</p>
+<p>📍 Batwara, Srinagar</p>
+<p>🕒 Mon - Sat: 9:00 AM - 7:00 PM</p>
+</div>
+<div>
+<p><strong>Location</strong></p>
+<a href="https://www.google.com/maps?q=Batwara%20Srinagar%20Jammu%20and%20Kashmir" target="_blank" style="color:var(--gold);text-decoration:none">📍 Get Directions</a>
+</div>
+</footer>
+
+</body>
+</html>
